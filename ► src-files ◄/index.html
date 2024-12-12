@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Webshop Donuts</title>
+    <script type="module" crossorigin src="index-UEe72dTx.js"></script>
+    <link rel="stylesheet" crossorigin href="index-NxTIWWkg.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <img src="webshop.header-CPaz4Vuk.webp" width="1920px" height="300px" alt="Webshop Donuts" class="header-img" loading="lazy" referrerpolicy="no-referrer noopener">        
+      </div>
+    </header>
+    <div id="donutContainer"></div>    
+    <div id="cart"></div>
+    <div class="payment-options">
+      <div class="selector">
+        <label>
+          <input type="radio" name="payment-option" value="invoice" aria-label="Invoice payment option">
+          <span>Faktura</span>
+        </label>
+        <label>
+          <input type="radio" name="payment-option" value="card" checked aria-label="Card payment option">
+          <span>Kort</span>
+        </label>
+      </div>     
+      <div class="invoice hidden" id="invoice">
+        <label>
+          <span>Personnummer</span>
+          <input type="text" name="personalId" id="personalId" value="YYMMDD-XXXX" placeholder="YYMMDD-XXXX" aria-label="Enter your personal number">
+        </label>
+      </div>
+      <div class="card" id="card">
+        <label>
+          <span>Kortnummer</span>
+          <input type="number" id="creditCardNumber" value="5100080000000000" placeholder="Kortnummer" aria-label="Enter your credit card number"> 
+        </label>
+        <label>
+          <span>Datum</span>
+          <span>
+            <input type="number" class="small" placeholder="YY" id="creditCardYear" aria-label="Enter credit card expiration year">/
+            <input type="number" class="small" placeholder="MM" id="creditCardMonth" aria-label="Enter credit card expiration month">
+          </span>
+        </label>
+        <label>
+          <span>CVC</span>
+          <input type="number" placeholder="123" id="creditCardCvc" aria-label="Enter your credit card CVC">
+        </label>
+      </div>
+      <button id="orderBtn" disabled aria-label="Place order" aria-disabled="true">Beställ</button>
+    </div>
+    <div id="confirmationMessage" class="hidden" aria-live="polite"></div>
+    <div id="errorContainer" class="hidden" style="color: red; font-size: 18px; margin: 10px 0; text-align: center;" aria-live="assertive"></div>
+
+  </body>
+</html>

@@ -1,0 +1,94 @@
+#donutContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+
+  .donut-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .donut-img-container {
+      position: relative;
+
+      .donut-img {
+        width: 100%;  
+        height: auto;     
+        border-radius: 20px;
+        object-fit: cover;
+      }    
+
+      .image-controls { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; justify-content: space-between; width: 100%; pointer-events: none; 
+        
+      button { background: rgba(26, 36, 216, 0.7); 
+      border: none; font-size: 20px; cursor: pointer; padding: 5px 10px; border-radius: 15px; color: #fff; pointer-events: auto; 
+      &:hover { background-color: rgba(26, 36, 216, 0.9);
+
+       }
+      }
+    }
+  }
+
+    .donut-rating {
+      font-size: 1.5rem;
+      color: gold;  
+      margin-top: 5px;  
+    }
+    
+    .donut-rating span {
+      display: inline-block;
+    }
+    
+    .donut-info {
+      margin-top: 1rem;
+      text-align: center;
+
+      .donut-name {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #181717;
+      }
+
+      .donut-price {
+        font-weight: bold;
+        border-style:outset;
+        font-size: 1rem;
+        color: #777;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .donut-actions {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .button {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background: #0056b3;
+        }
+      }
+      .donut-amount {
+        font-size: 0.9rem;
+        color: #161616;
+      }
+    }
+  }
+}
