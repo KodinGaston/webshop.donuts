@@ -1,0 +1,81 @@
+@media (max-width: 300px) {
+  .cart,
+  .payment-area {
+    font-size: 12px; 
+  }
+  input[type="text"], select {
+    width: 100%; 
+  }
+}
+// media queries for mobiles
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  .header-img {
+    border-radius: 0; 
+  }
+  #cart {
+    max-width: 100%; 
+    font-size: 1rem; 
+  }
+  .donut-card {
+    padding: 0.5rem;
+  }
+  .donut-img {
+    width: 100%;
+    height: auto; 
+  }
+  .payment-options {
+    padding: 8px;
+  }
+  #confirmationMessage {
+    width: 90%; 
+    bottom: 10px; 
+  }
+}
+// Queries for tablets
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 2rem;
+  }
+  .donut-card {
+    flex-direction: row; 
+    gap: 1rem;
+  }
+  .donut-img-container {
+    width: 100%; 
+  }
+  #cart {
+    max-width: 80%;
+    margin: auto; 
+  }
+  .payment-options {
+    font-size: 1.1rem;
+  }
+  #confirmationMessage {
+    width: 80%; 
+  }
+}
+// Media query for bigger screens
+@media (min-width: 1025px) {
+  #donutContainer {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .donut-card {
+    padding: 1.5rem;
+  }
+  #cart {
+    max-width: 100%; 
+  }
+  .payment-options {
+    font-size: 1.2rem;
+  }
+  #confirmationMessage {
+    width: 300px; 
+  }
+}

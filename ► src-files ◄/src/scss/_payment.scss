@@ -1,0 +1,98 @@
+
+#cart {
+  background-color: #007bff;
+  color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  align-items: flex-start;  
+  gap: 1rem;  
+  width: 100%;  
+  max-width: 55vh;  
+  padding: 1rem;  
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border: 1px solid #262626;  
+  margin: auto 10px;  
+}
+#cart .product {
+  display: table;
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+  font-size: 1rem;   
+}
+#cart .summary {
+  margin-top: 1rem; 
+  font-weight: bold;
+  width: 100%; 
+  text-align: right; 
+}
+#cart:disabled {
+  background-color: #007bff80;
+  cursor: not-allowed;
+}
+.payment-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1rem; 
+  width: 100%; 
+  max-width: 55vh; 
+  box-sizing: border-box; 
+}
+.payment-options {
+  width: 100%; 
+  max-width: 75vh; 
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid #151414;
+  box-sizing: border-box; 
+  font-size: 1.2rem;
+  margin: 30px 10px;
+}
+.payment-options button {
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  background-color: green;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.payment-options button:disabled {
+  background-color: #0eed6f;
+  cursor: not-allowed;
+}
+.payment-options .selector {
+  margin-block: 16px;
+  text-align: center;
+}
+.payment-options input.small {
+  width: 80px;
+}
+.payment-options span {
+  color: rgb(118, 85, 2, 0.6);
+}
+#card,
+#invoice {
+  background-color: #eaf6f6;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  max-width: 600px;  
+  margin: 1rem auto;  
+}
+#card label,
+#invoice label {
+  display: block;
+  margin: 0.5rem 0;
+}
+#invoice span {
+  color: green;
+}
+#card span {
+  color: green;
+}
