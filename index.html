@@ -2,7 +2,7 @@
 <html lang="sv">
   <head>   
     <meta charset="UTF-8">
-    <link rel="icon" href="vite.svg">
+    <link rel="icon" type="svg+xml" href="vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webshop Donuts</title>
     <script type="module" crossorigin src="main.js"></script>
@@ -41,22 +41,18 @@
   <label for="creditCardNumber">Kortnummer</label>
   <input type="number" id="creditCardNumber" value="5100080000000000" placeholder="Kortnummer" aria-label="Enter your credit card number">
   <!-- Expiration date -->
-  <div>
     <span>Datum</span>
     <label for="creditCardYear">År</label>
     <input type="number" class="small" id="creditCardYear" placeholder="YY" aria-label="Enter credit card expiration year">
     /
     <label for="creditCardMonth">Månad</label>
     <input type="number" class="small" id="creditCardMonth" placeholder="MM" aria-label="Enter credit card expiration month">
-  </div>
   <!-- CVC -->
   <label for="creditCardCvc">CVC</label>
   <input type="number" id="creditCardCvc" placeholder="123" aria-label="Enter your credit card CVC">
  </div>
-</div>
-
 <!-- Button order/ beställ -->
-<button id="orderBtn" disabled aria-label="Place order">Beställ</button>
+<div><button id="orderBtn" disabled aria-label="Place order">Beställ</button></div>
 <!-- Messages -->
  <div id="confirmationMessage" class="hidden" aria-live="polite"></div>
  <div id="errorContainer" class="hidden" style="color: red; font-size: 18px; margin: 10px 0; text-align: center;" aria-live="assertive"></div>
