@@ -2,7 +2,7 @@
 <html lang="sv">
   <head>   
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg" href="vite.svg">
+    <link rel="icon" href="vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webshop Donuts</title>
     <script type="module" crossorigin src="main.js"></script>
@@ -15,11 +15,12 @@
         <img src="webshop.header.webp" width="1920" height="300" alt="Webshop Donuts" class="header-img" loading="lazy" referrerpolicy="no-referrer">        
       </div>
     </header>
+    <!-- Main Content -->
     <div id="donutContainer"></div>    
     <div id="cart"></div>
     <div class="payment-options">
-      <div class="selector">
-       <div>
+      <!-- Payment Selector -->
+      <div class="selector">       
   <!-- Payment options -->
   <label>
     <input type="radio" name="payment-option" value="invoice" aria-label="Invoice payment option">
@@ -30,18 +31,15 @@
     <span>Kort</span>
   </label>
 </div>
-
+<!-- Invoice Section -->
 <div class="invoice hidden" id="invoice">
-  <!-- Invoice -->
   <label for="personalId">Personnummer</label>
   <input type="text" name="personalId" id="personalId" value="YYMMDD-XXXX" placeholder="YYMMDD-XXXX" aria-label="Enter your personal number">
 </div>
-
+<!-- Credit Card Section -->
 <div class="card" id="card">
-  <!-- Credit Card -->
   <label for="creditCardNumber">Kortnummer</label>
   <input type="number" id="creditCardNumber" value="5100080000000000" placeholder="Kortnummer" aria-label="Enter your credit card number">
-
   <!-- Expiration date -->
   <div>
     <span>Datum</span>
@@ -51,18 +49,16 @@
     <label for="creditCardMonth">Månad</label>
     <input type="number" class="small" id="creditCardMonth" placeholder="MM" aria-label="Enter credit card expiration month">
   </div>
-
   <!-- CVC -->
   <label for="creditCardCvc">CVC</label>
   <input type="number" id="creditCardCvc" placeholder="123" aria-label="Enter your credit card CVC">
  </div>
+</div>
 
- <!-- Button order/ beställ -->
- <button id="orderBtn" disabled aria-label="Place order" aria-disabled="true">Beställ</button>
-
-      
+<!-- Button order/ beställ -->
+<button id="orderBtn" disabled aria-label="Place order">Beställ</button>
+<!-- Messages -->
  <div id="confirmationMessage" class="hidden" aria-live="polite"></div>
  <div id="errorContainer" class="hidden" style="color: red; font-size: 18px; margin: 10px 0; text-align: center;" aria-live="assertive"></div>
-
  </body>
 </html>
